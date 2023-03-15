@@ -51,12 +51,12 @@ int	ft_printf(const char *src, ...)
 	va_start(args, src);
 	while (src[i])
 	{
-		if (src[i] == '%')
+		if (src[i] == '%' && src[i + 1] != '\0' && src[i + 1] == "%xXuidpsc")
 		{
 			len += ft_type(&args, src[1 + i]);
 			i++;
 		}
-		else
+		if else(src[i] != '%')
 			len += ft_putchar(src[i]);
 		i++;
 	}
