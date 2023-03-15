@@ -17,7 +17,7 @@ OBJS		= $(SRCS:.c=.o)
 					
 NAME		= libftprintf.a
 
-CC			= gcc
+CC			= cc
 RM			= rm -f
 CFLAGS		= -Wall -Wextra -Werror
 
