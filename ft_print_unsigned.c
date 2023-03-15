@@ -36,8 +36,6 @@ unsigned int	ft_print_unsigned(unsigned int n)
 	ft_putuns(n);
 	if (n == -0)
 		return (1);
-	else if (n < 0)
-		len = 0;
 	while (n >= 1)
 	{
 		n = n / 10;
