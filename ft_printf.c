@@ -56,7 +56,7 @@ int	ft_printf(const char *src, ...)
 			len += ft_type(&args, src[1 + i]);
 			i++;
 		}
-		if else(src[i] != '%')
+		if else (src[i] != '%')
 			len += ft_putchar(src[i]);
 		i++;
 	}
